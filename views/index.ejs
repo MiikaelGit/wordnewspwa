@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/_css/style.css">
+    <meta charset="UTF-8">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="/icon512_rounded.png" type="image/png">
+    <link rel="apple-touch-icon" href="/icon512_rounded.png" type="image/png">
+    <link rel="shortcut icon" href="/icon512_rounded.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordNews</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/icon512_maskable.png" alt="">
+            <h1>WorldNews</h1>
+        </div>
+
+        <small>Your Source for Today's Stories, Tomorrow's Insights</small>
+
+    </header>
+    <main>
+        <article>
+            <a href="">
+                <h2>Tech Giant Unveils Revolutionary AI-Powered Device</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas!</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Global Leaders Convene to Address Economic Recovery Strategies</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, iusto. Quae nemo doloribus hic tempora sint magni consequatur asperiores illum corrupti, sapiente excepturi dolorem perspiciatis. Hic aliquam molestiae dolore voluptatum?</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Innovative Startup Launches Game-Changing Renewable Energy Solution</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas!</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Historic Peace Agreement Signed in Long-Running Conflict</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repudiandae quod! Repellat, aliquam expedita. Hic quo repudiandae maxime, ducimus reprehenderit placeat nulla recusandae sint quisquam perferendis. Nisi impedit atque corrupti.</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Space Exploration Mission Discovers Potential for Life on Mars</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas!</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Renowned Author Releases Highly Anticipated Novel</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quam et sint error! Aperiam, obcaecati nesciunt quam quidem totam libero eveniet magnam quas enim impedit accusantium error quisquam quos nihil!</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Major City Implements Bold Plan for Sustainable Transport</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas!</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Sports Team Makes Historic Comeback in Championship</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi, repellendus ullam nihil cumque culpa quod repudiandae nisi quidem magnam illo iusto aliquid dolorum voluptas officiis sint architecto nemo modi.</p>
+        </article>
+        <article>
+            <a href="">
+                <h2>Tech Startup Raises Record Funds for Innovative Health App</h2>
+                
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eveniet soluta quaerat eius temporibus? Deleniti libero recusandae quasi consequuntur voluptate, voluptatum, excepturi illo magnam voluptates repellendus sapiente minus, necessitatibus voluptas!</p>
+        </article>
+        <div class="load-more">
+            <a href="">
+                <p>loading more...</p>
+            </a>
+        </div>
+    </main>
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/generate-sw.js')
+            .then(function(registration) {
+                    console.log('ServiceWorker registrado com escopo:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.error('Falha ao registrar ServiceWorker:', error);
+                });
+                
+        }
+
+        function requestPermission() {
+        if (!('Notification' in window)) {
+            alert('Notification API not supported!');
+            return;
+        }
+        
+        Notification.requestPermission();
+        }
+        requestPermission()
+    </script>
+</body>
+</html>

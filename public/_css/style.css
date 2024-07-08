@@ -1,0 +1,42 @@
+body {
+    background-color: whitesmoke;
+    margin: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #266294;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    width: 3rem;
+    height: 3rem;
+}
+
+header small {
+    font-style: italic;
+    text-align: center;
+}
+
+.load-more {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+}

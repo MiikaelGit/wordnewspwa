@@ -4,7 +4,8 @@
   "description": "PWA",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build": "ejs views/index.ejs -o public/index.html && ejs views/offlinePage.ejs -o public/offlinePage.html"
   },
   "author": "Mikael",
   "license": "ISC",

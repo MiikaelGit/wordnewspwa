@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "ejs views/index.ejs -o index.html && ejs views/offlinePage.ejs -o offlinePage.html"
+     "build": "ejs views/index.ejs -o docs/index.html && ejs views/offlinePage.ejs -o docs/offlinePage.html"
   },
   "author": "Mikael",
   "license": "ISC",

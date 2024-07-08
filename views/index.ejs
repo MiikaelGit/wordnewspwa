@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/public/_css/style.css">
+    <link rel="stylesheet" href="./public/_css/style.css">
     <meta charset="UTF-8">
-    <link rel="manifest" href="/public/manifest.json">
-    <link rel="icon" href="/public/_img/icon512_rounded.png" type="image/png">
-    <link rel="apple-touch-icon" href="/public/_img/icon512_rounded.png" type="image/png">
-    <link rel="shortcut icon" href="/public/_img/icon512_rounded.png" type="image/png">
+    <link rel="manifest" href="./public/manifest.json">
+    <link rel="icon" href="./public/_img/icon512_rounded.png" type="image/png">
+    <link rel="apple-touch-icon" href="./public/_img/icon512_rounded.png" type="image/png">
+    <link rel="shortcut icon" href="./public/_img/icon512_rounded.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldNews</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="/public/_img/icon512_maskable.png" alt="">
+            <img src="./public/_img/icon512_maskable.png" alt="">
             <h1>WorldNews</h1>
         </div>
 
@@ -92,7 +92,7 @@
     </main>
     <script>
         if('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/public/generate-sw.js')
+            navigator.serviceWorker.register('./public/generate-sw.js')
             .then(function(registration) {
                     console.log('ServiceWorker registrado com escopo:', registration.scope);
                 })

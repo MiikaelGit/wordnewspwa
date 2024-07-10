@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "ejs views/index.ejs -o docs/index.html && ejs views/offlinePage.ejs -o docs/offlinePage.html"
+    "build": "ejs views/index.ejs -o docs/index.html && ejs views/offlinePage.ejs -o docs/offlinePage.html && postcss public/_css/style.css -o docs/_css/style.css"
   },
   "author": "Mikael",
   "license": "ISC",
@@ -13,5 +13,9 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "i": "^0.3.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss-cli": "^11.0.0"
   }
 }

@@ -6,7 +6,7 @@
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="_img/icon512_rounded.png" type="image/png">
     <link rel="apple-touch-icon" href="_img/icon512_rounded.png" type="image/png">
-    <link rel="shortcut icon" href="_img/icon512_rounded.png" type="image/png">
+    <link rel="shortcut icon" href="_img/icon512_maskable.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorldNews</title>
 </head>
@@ -91,7 +91,7 @@
     </main>
     <script>
         if('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('generate-sw.js')            .then(function(registration) {
+            navigator.serviceWorker.register('generate-sw.js').then(function(registration) {
                     console.log('ServiceWorker registrado com escopo:', registration.scope);
                 })
                 .catch(function(error) {
